@@ -244,105 +244,7 @@ input[type="checkbox"] {
     justify-content: flex-start;
 }
 
-.rectanglebutton {
-    background: #e4a951;
-    border-radius: 30px;
-    width: 273px;
-    height: 44px;
-    position: absolute;
-    left: calc(20% - 200px);
-    top: 640px;
-}
 
-.belajar-sekarang {
-    color: #ffffff;
-    text-align: center;
-    font-family: var(--font-button);
-    font-size: 20px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(20% - 180px);
-    top: 648px;
-    width: 236px;
-    height: 35px;
-}
-
-.rectangle-5,
-.rectangle-6,
-.rectangle-7,
-.rectangle-8,
-.rectangle-9 {
-    background: #e4a951;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 710px;
-}
-
-.rectangle-5 {
-    left: 98px;
-}
-
-.rectangle-6 {
-    left: 175px;
-}
-
-.rectangle-7 {
-    left: 252px;
-}
-
-.rectangle-8 {
-    left: 329px;
-}
-
-.rectangle-9 {
-    left: 406px;
-}
-
-.formkit-instagram,
-.entypo-social-facebook,
-.akar-icons-linkedin-v-1-fill,
-.icomoon-free-youtube,
-.skill-icons-twitter {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 715px;
-    overflow: visible;
-}
-
-.formkit-instagram {
-    left: 103px;
-}
-
-.entypo-social-facebook {
-    left: 180px;
-}
-
-.akar-icons-linkedin-v-1-fill {
-    left: 257px;
-}
-
-.icomoon-free-youtube {
-    left: 334px;
-}
-
-.skill-icons-twitter {
-    left: 411px;
-}
-
-.group {
-    height: auto;
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    width: 100%;
-    bottom: 0%;
-    top: 0%;
-    height: 100%;
-    overflow: visible;
-}
 
 .masjid-transparant {
     width: 742px;
@@ -396,6 +298,7 @@ input[type="checkbox"] {
     color: #fff;
     margin-top: 70px;
     margin-left: 45px;
+    font-family: var(--font-judul);
 }
 
 .header img {
@@ -427,6 +330,7 @@ input[type="checkbox"] {
     margin-bottom: 16px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .card img {
