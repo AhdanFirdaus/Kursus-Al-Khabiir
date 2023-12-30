@@ -36,7 +36,6 @@
 
 
 body {
-    height: 2000px;
     overflow-x: hidden;
 }
 
@@ -199,34 +198,34 @@ input[type="checkbox"] {
 
 /* Tentang */
 
-    .tentang {
-        background: #131211;
-        width: 100%;
-        height: 832px;
-        position: relative;
-        overflow: hidden;
-    }
+.tentang {
+    background: #131211;
+    width: 100%;
+    height: 832px;
+    position: relative;
+    overflow: hidden;
+}
 
-    .atas-1 {
-        width: 500px;
-        height: 203px;
-        position: absolute;
-        left: 94px;
-        top: 53px;
-    }
+.atas-1 {
+    width: 500px;
+    height: 203px;
+    position: absolute;
+    left: 94px;
+    top: 53px;
+}
 
-    .judul {
-        color: #ffffff;
-        text-align: center;
-        font-family: var(--font-judul);
-        font-size: 45px;
-        font-weight: 400;
-        position: absolute;
-        left: calc(20% - 215px);
-        top: 251px;
-        width: 523px;
-        height: 62px;
-    }
+.judul {
+    color: #ffffff;
+    text-align: center;
+    font-family: var(--font-judul);
+    font-size: 45px;
+    font-weight: 400;
+    position: absolute;
+    left: calc(20% - 215px);
+    top: 251px;
+    width: 523px;
+    height: 62px;
+}
 
 .penjelasan-tentang {
     color: #ffffff;
@@ -266,6 +265,7 @@ input[type="checkbox"] {
     width: 236px;
     height: 35px;
 }
+
 .rectangle-5,
 .rectangle-6,
 .rectangle-7,
@@ -279,11 +279,25 @@ input[type="checkbox"] {
     top: 710px;
 }
 
-.rectangle-5 { left: 98px; }
-.rectangle-6 { left: 175px; }
-.rectangle-7 { left: 252px; }
-.rectangle-8 { left: 329px; }
-.rectangle-9 { left: 406px; }
+.rectangle-5 {
+    left: 98px;
+}
+
+.rectangle-6 {
+    left: 175px;
+}
+
+.rectangle-7 {
+    left: 252px;
+}
+
+.rectangle-8 {
+    left: 329px;
+}
+
+.rectangle-9 {
+    left: 406px;
+}
 
 .formkit-instagram,
 .entypo-social-facebook,
@@ -297,11 +311,25 @@ input[type="checkbox"] {
     overflow: visible;
 }
 
-.formkit-instagram { left: 103px; }
-.entypo-social-facebook { left: 180px; }
-.akar-icons-linkedin-v-1-fill { left: 257px; }
-.icomoon-free-youtube { left: 334px; }
-.skill-icons-twitter { left: 411px;     }
+.formkit-instagram {
+    left: 103px;
+}
+
+.entypo-social-facebook {
+    left: 180px;
+}
+
+.akar-icons-linkedin-v-1-fill {
+    left: 257px;
+}
+
+.icomoon-free-youtube {
+    left: 334px;
+}
+
+.skill-icons-twitter {
+    left: 411px;
+}
 
 .group {
     height: auto;
@@ -352,11 +380,11 @@ input[type="checkbox"] {
 
 .container {
     width: 100%;
-    height: 600px;
+    height: 530px;
     padding: 40px 40px 40px 40px;
     margin: auto;
     background-color: #131211;
-    border-bottom: 6px #D0B003 solid;
+    border-bottom: 6px var(--emas) solid;
 }
 
 .header {
@@ -376,7 +404,7 @@ input[type="checkbox"] {
 
 .container-card {
     width: 100%;
-    height: 400px;
+    height: 320px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -441,6 +469,7 @@ input[type="checkbox"] {
     width: 100%;
     padding: 40px 40px 40px 40px;
     color: #121212;
+    margin-top: -20px;
 }
 
 .waktusholat .judul-waktu {
@@ -526,32 +555,6 @@ input[type="checkbox"] {
 
 
 
-/* kegiatan */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Responsive */
@@ -617,23 +620,3 @@ input[type="checkbox"] {
         padding: 0 6% 0 20%
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
