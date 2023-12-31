@@ -118,11 +118,10 @@ input[type="checkbox"] {
 
 .container-beranda {
     width: 100%;
-    height: 800px;
+    height: 1000px;
     margin: 0 auto;
     text-align: center;
     background-image: url(/assets/masjid.jpg);
-    background-position: 0;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -134,7 +133,7 @@ input[type="checkbox"] {
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     background: linear-gradient(180deg, rgb(19, 18, 17, 0.45) 0%, rgb(19, 18, 17, 0.90) 100%);
     z-index: 1;
 }
@@ -198,34 +197,37 @@ input[type="checkbox"] {
 
 /* Tentang */
 
-.tentang {
-    background: #131211;
-    width: 100%;
-    height: 832px;
-    position: relative;
-    overflow: hidden;
-}
+    .tentang {
+        background: #131211;
+        width: 100%;
+        height: 1000px;
+        position: relative;
+        overflow: hidden;
+    }
 
-.atas-1 {
-    width: 500px;
-    height: 203px;
-    position: absolute;
-    left: 94px;
-    top: 53px;
-}
+    .tentang-side {
+        position: relative;
+        width: 44%;
+        height: 100%;
+        margin-left: 2.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        }
+    
+    .atas-1 {
+        width: 500px;
+        height: 203px;
+        }
 
-.judul {
-    color: #ffffff;
-    text-align: center;
-    font-family: var(--font-judul);
-    font-size: 45px;
-    font-weight: 400;
-    position: absolute;
-    left: calc(20% - 215px);
-    top: 251px;
-    width: 523px;
-    height: 62px;
-}
+        .judul {
+            color: #ffffff;
+            font-family: var(--font-judul);
+            font-size: 45px;
+            font-weight: 400;
+            width: 523px;
+            }
 
 .penjelasan-tentang {
     color: #ffffff;
@@ -233,14 +235,11 @@ input[type="checkbox"] {
     font-family: var(--font-paragraph);
     font-size: 20px;
     font-weight: 400;
-    position: absolute;
-    left: calc(20% - 200px);
-    top: 295px;
-    width: 799px;
-    height: 359px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding: 2rem 0;
 }
 
 .rectanglebutton {
@@ -248,16 +247,12 @@ input[type="checkbox"] {
     border-radius: 30px;
     width: 273px;
     height: 44px;
-    position: absolute;
-    left: calc(20% - 200px);
-    top: 640px;
-}
-
-.belajar-sekarang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #ffffff;
-    text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 400;
     position: absolute;
     left: calc(20% - 180px);
@@ -266,89 +261,41 @@ input[type="checkbox"] {
     height: 35px;
 }
 
-.rectangle-5,
-.rectangle-6,
-.rectangle-7,
-.rectangle-8,
-.rectangle-9 {
-    background: #e4a951;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 710px;
+.media {
+    width: 40%;
+    display: flex;
+    gap: 4%;
+    margin-top: 3rem;
 }
 
-.rectangle-5 {
-    left: 98px;
-}
-
-.rectangle-6 {
-    left: 175px;
-}
-
-.rectangle-7 {
-    left: 252px;
-}
-
-.rectangle-8 {
-    left: 329px;
-}
-
-.rectangle-9 {
-    left: 406px;
-}
-
-.formkit-instagram,
-.entypo-social-facebook,
-.akar-icons-linkedin-v-1-fill,
-.icomoon-free-youtube,
-.skill-icons-twitter {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 715px;
-    overflow: visible;
-}
-
-.formkit-instagram {
-    left: 103px;
-}
-
-.entypo-social-facebook {
-    left: 180px;
-}
-
-.akar-icons-linkedin-v-1-fill {
-    left: 257px;
-}
-
-.icomoon-free-youtube {
-    left: 334px;
-}
-
-.skill-icons-twitter {
-    left: 411px;
-}
-
-.group {
-    height: auto;
-    position: absolute;
-    right: 0%;
-    left: 0%;
+.rectangle {
+    background-color: #e4a951;
     width: 100%;
-    bottom: 0%;
-    top: 0%;
-    height: 100%;
-    overflow: visible;
+    display: grid;
+    place-items: center;
+    padding: .4rem;
+    border-radius: .6rem;
 }
 
 .masjid-transparant {
-    width: 742px;
-    height: 688px;
+    background-color: white;
+    background-image: url(/assets/masjid-transparant.png);
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50% 0 0 5%;
+    overflow: hidden;
     position: absolute;
-    right: -90px;
-    top: 155px;
+    bottom: 0;
+    right: 2.5%;
+}
+
+.masjid-transparant .overlay {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(19, 18, 17, 0) 25%, rgb(19, 18, 17, 1) 100%), linear-gradient(180deg, rgba(19, 18, 17, 0) 25%, rgb(19, 18, 17, 1 )100%);
 }
 
 
@@ -380,7 +327,7 @@ input[type="checkbox"] {
 
 .container {
     width: 100%;
-    height: 530px;
+    height: auto;
     padding: 40px 40px 40px 40px;
     margin: auto;
     background-color: #131211;
@@ -388,18 +335,18 @@ input[type="checkbox"] {
 }
 
 .header {
-    margin-left: -30px;
+    width: 20%;
+    text-align: center;
 }
 
 .header h2 {
     color: #fff;
-    margin-top: 70px;
-    margin-left: 45px;
+    font-size: 45px;
     font-family: var(--font-judul);
 }
 
 .header img {
-    width: 300px;
+    width: 100%;
 }
 
 .container-card {
@@ -467,7 +414,7 @@ input[type="checkbox"] {
 /* Waktu Sholat */
 .waktusholat {
     width: 100%;
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
     color: #121212;
     margin-top: -20px;
 }
@@ -480,10 +427,13 @@ input[type="checkbox"] {
 .waktu {
     display: flex;
     justify-content: center;
+    gap: 2rem;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .card-waktu {
-    width: 200px;
+    width: 100%;
     margin: 10px;
     background-color: #f0f0f0;
     border: 2px solid #D0B003;
@@ -501,48 +451,33 @@ input[type="checkbox"] {
 }
 
 
-@media (max-width: 971px) {
-    .container .container-card {
-        overflow-y: scroll;
-    }
-
-    .column {
-        flex: 1 100%;
-        max-width: 100%;
-        margin-bottom: -10px;
-    }
-
-    .card img {
-        width: 20%;
-    }
-
-    .waktusholat .waktu {
-        overflow-x: scroll;
-    }
-}
 
 
-@media (max-width: 706px) {
-    .card {
-        padding: 10px;
-        padding-left: 15px;
-    }
 
-    .card img {
-        display: none;
-    }
 
-    .card .isi {
-        margin-top: 5px;
-    }
-}
 
-@media (max-width: 308px) {
-    .header img {
-        width: 200px;
-        margin-left: 15px;
-    }
-}
+
+
+
+
+
+
+
+
+/* kegiatan */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -561,7 +496,7 @@ input[type="checkbox"] {
 
 
 
-@media (max-width: 1186px) {
+@media (max-width: 1100px) {
     nav .menu-btn i {
         display: block;
     }
@@ -608,15 +543,219 @@ input[type="checkbox"] {
         background: none;
         color: var(--emas);
     }
+
+    /* Tentang */
+    .atas-1 {
+        width: 100%;
+        height: 15%;
+    }
+
+    .judul {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .tentang-side {
+        width: 45%;
+        justify-content: space-between;
+    }
+
+    .masjid-transparant {
+        width: 48%;
+        background-position-x: -15rem;
+    }
+
+    .penjelasan-tentang {
+        font-size: 19px;
+    }
+
+    .media {
+        margin: 0;
+        gap: 9%;
+    }
+
+    .rectangle svg {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    /* Layanan */
+    .header {
+        width: 40%;
+    }
+
+    .header h2 {
+        font-size: 35px;
+    }
+
+    .container .container-card {
+        overflow-y: scroll;
+    }
+
+    .container .container-card::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    .column {
+        flex: 1 100%;
+        max-width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .card img {
+        width: 20%;
+    }
+
+    .waktusholat .waktu {
+        width: auto;
+        gap: .2rem;
+    }
 }
 
 
-@media (max-width: 500px) {
+
+@media (max-width: 768px) and (min-width: 300px) {
     .container-beranda .beranda {
         top: 350px;
     }
-
+    
     nav {
         padding: 0 6% 0 20%
     }
+    
+    nav {
+        padding: 0 6% 0 19%
+    }
+
+    /* Tentang */
+    .judul {
+        text-align: center;
+    }
+    .tentang-side {
+        width: 95%;
+        z-index: 2;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .masjid-transparant {
+        background-color: transparent;
+        width: 90%;
+        background-position-x: center ;
+    }
+    
+    .masjid-transparant .overlay {
+        background: radial-gradient(rgba(19, 18, 17, .5) 25%, rgb(19, 18, 17, 1) 100%), 
+        linear-gradient(180deg, rgba(19, 18, 17, .5) 25%, rgb(19, 18, 17, 1 )100%);
+    }
+
+    .penjelasan-tentang {
+        text-align: center;
+    }
+
+    .media {
+        margin-top: 1rem;
+        gap: 4%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rectangle svg {
+        height: 40px;
+        width: 40px;
+    }
+
+
+    /* Layanan */
+    .header {
+        width: 100%;
+    }
+
+    .container{
+        padding: 2rem ;
+    }
+
+    .card {
+        padding: 10px;
+        padding-left: 15px;
+    }
+    
+    .card img {
+        display: none;
+    }
+    
+    .card .isi {
+        margin-top: 5px;
+    }
+
+
+    /* Waktu Sholat */
+    .waktusholat {
+        padding: 20px 10px;
+    }
+
+    .waktusholat .judul-waktu {
+        margin-bottom: 10px;
+    }
+
+    .waktusholat .waktu {
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+
+    .card-waktu {
+        padding: 10px;
+        margin: 1px;
+        width: 100px;
+    }
+
 }
+
+/* @media (max-width: 971px) {
+    .container .container-card {
+        overflow-y: scroll;
+    }
+
+    .column {
+        flex: 1 100%;
+        max-width: 100%;
+        margin-bottom: -10px;
+    }
+
+    .card img {
+        width: 20%;
+    }
+
+    .waktusholat .waktu {
+        overflow-x: scroll;
+    }
+} */
+
+/* @media (max-width: 500px) {
+    .container-beranda .beranda {
+        top: 350px;
+    }
+    
+    nav {
+        padding: 0 6% 0 20%
+    }
+    .header img {
+        width: 200px;
+        margin-left: 15px;
+    }
+    
+    nav {
+        padding: 0 6% 0 19%
+    }
+} */
+
+
+
+
+
+
+
+
+
+
