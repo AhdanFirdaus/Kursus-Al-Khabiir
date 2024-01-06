@@ -59,7 +59,7 @@ nav {
     border-bottom: var(--emas) 5px solid;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
+    padding: 0 50px 0 85px;
     flex-wrap: wrap;
     z-index: 999;
 }
@@ -599,8 +599,7 @@ input[type="checkbox"] {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;;
-    padding: 2rem 0;
+    padding-top: 3rem;
 }
 
 .container-toko .header-toko{
@@ -631,7 +630,7 @@ input[type="checkbox"] {
 
 .slide-container {
     width: 100%;
-    padding: 40px 30px !important;
+    padding: 10px 30px 30px 30px !important;
     max-width: 1820px;
 }
 
@@ -709,8 +708,15 @@ input[type="checkbox"] {
     color: rgba(255, 0, 0, 0.8);
 }
 
+.slide-container .harga .text-blink {
+    animation: blinker 1.5s linear infinite;
+}
 
-
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
 
 .slide-container .rating i:last-child {
     opacity: .3;
@@ -735,11 +741,11 @@ input[type="checkbox"] {
 }
 
 .slide-container .swiper-button-next {
-    right: 0;
+    right: 10px;
 }
 
 .slide-container .swiper-button-prev {
-    left: 0;
+    left: 10px;
 }
 
 .slide-container .swiper-pagination.bullets {
@@ -753,7 +759,7 @@ input[type="checkbox"] {
 
 
 .container-toko .bawah-toko {
-
+    margin-top: 10px;
     width: 100%;
     background-color: var(--hijau-tua);
     display: flex;
@@ -784,7 +790,7 @@ input[type="checkbox"] {
 }
 
 .container-toko .bawah-toko .card-toko:hover .content {
-    transform: scale(1.2);
+    transform: scale(1);
     border-top: 8px solid var(--emas);
     border-bottom: 1px;
     position: relative;
@@ -795,6 +801,7 @@ input[type="checkbox"] {
 
 .container-toko .bawah-toko .card-toko h3 {
     color: var(--putih);
+    text-align: center;
 }
 
 .container-toko .bawah-toko .bintang {
@@ -802,6 +809,7 @@ input[type="checkbox"] {
     justify-content: center;
     width: 40%;
     margin-top: 1rem;
+    border-bottom: 8px solid var(--emas);
 }
 
 .container-toko .bawah-toko .bintang .fa-star {
@@ -1100,6 +1108,10 @@ footer .container-footer a {
         color: var(--emas);
     }
 
+    .header-kegiatan h2 {
+        font-size: 35px;
+    }
+
     /* Tentang */
     .atas-1 {
         width: 100%;
@@ -1184,6 +1196,10 @@ footer .container-footer a {
         gap: 1rem;
     }
 
+    .header-kontak h2 {
+        font-size: 35px;
+    }
+
     .colum-kontak {
         width: 100%;
     }
@@ -1200,6 +1216,23 @@ footer .container-footer a {
     .container-kontak .sisi-pertama .medsos ul {
         font-size: 40px;
     }
+
+    /* Toko */
+    .container-toko .header-toko .judul-toko {
+        width: 30%;
+    }
+
+    .container-toko .bawah-toko .card-toko .content {
+        padding: 1rem 0;
+    }
+
+    .fa-solid {
+        font-size: 40px;
+    }
+
+    .container-toko .bawah-toko h3 {
+        font-size: 18px;
+    }
 }
 
 
@@ -1209,16 +1242,21 @@ footer .container-footer a {
         width: 4px;
     }
 
+    nav .logo img {
+        margin-left: 0;
+        width: 40%;
+    }
+
+    .column {
+        margin: 0;
+    }
+
     .container-beranda .beranda {
         top: 350px;
     }
     
     nav {
-        padding: 0 6% 0 20%
-    }
-    
-    nav {
-        padding: 0 6% 0 19%
+        padding: 0 5% 0 3%
     }
 
     /* Tentang */
@@ -1278,9 +1316,12 @@ footer .container-footer a {
 
     .card {
         padding: 10px;
-        padding-left: 15px;
     }
     
+    .container-card .column .card img {
+        display: none;
+    }
+
     .card .container-card  {
         display: none;
     }
@@ -1343,6 +1384,55 @@ footer .container-footer a {
         gap: 0.5rem;
     }
 
+
+    /* Toko */
+    .container-toko .header-toko {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-toko .header-toko .judul-toko {
+        width: 80%;
+    }
+
+    .container-toko .header-toko .judul-toko h2 {
+        font-size: large;
+    }
+
+    .box-toko .slide-container {
+        padding: 15px 5px !important;
+    }
+
+    .container-toko .bawah-toko .card-toko .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .fa-solid {
+        font-size: 30px;
+    }
+
+    .container-toko .bawah-toko h3 {
+        font-size: 10px;
+    }
+
+    .container-toko .bawah-toko .bintang .fa-star {
+        font-size: 16px;
+    }
+
+    .slide-container .swiper-navBtn::before, .slide-container .swiper-navBtn::after {
+        font-size: 2rem;
+    }
+
+    .slide-container .swiper-button-next {
+        right: -2px;
+    }
+
+    .slide-container .swiper-button-prev {
+        left: -2px;
+    }
 }
 
 /* @media (max-width: 971px) {
