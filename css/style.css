@@ -4,7 +4,8 @@
 
 
 :root {
-    --emas: #D0B003;
+    /* --emas: #D0B003; */
+    --emas: #e2c103;
     --hijau-tua: #0E2630;
     --hijau-hitam: #091a22;
     --putih: #ffffff;
@@ -806,7 +807,7 @@ input[type="checkbox"] {
 .container-toko .bawah-toko .bintang {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 70%;
     margin-top: 1rem;
     border-bottom: 8px solid var(--emas);
 }
