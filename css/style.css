@@ -325,7 +325,7 @@ input[type="checkbox"] {
 .container {
     width: 100%;
     height: auto;
-    padding: 40px 40px 40px 40px;
+    padding: 100px 40px 40px 40px;
     margin: auto;
     background-color: #131211;
     border-bottom: 6px var(--emas) solid;
@@ -412,7 +412,6 @@ input[type="checkbox"] {
     width: 100%;
     padding: 40px;
     color: #121212;
-    margin-top: -20px;
 }
 
 .waktusholat .judul-waktu {
@@ -464,7 +463,7 @@ input[type="checkbox"] {
 .container-kegiatan {
     width: 100%;
     height: 100%;
-    padding: 40px 40px 100px 40px;
+    padding: 100px 40px 100px 40px;
 }
 
 .header-kegiatan {
@@ -488,6 +487,7 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-top: 10px;
 }
 
 .card-kegiatan {
@@ -551,7 +551,6 @@ input[type="checkbox"] {
     color: var(--putih);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: -70px;
     background-image: url(/assets/masjid-redup.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -599,7 +598,7 @@ input[type="checkbox"] {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 4rem;
 }
 
 .container-toko .header-toko{
@@ -630,7 +629,7 @@ input[type="checkbox"] {
 
 .slide-container {
     width: 100%;
-    padding: 10px 30px 30px 30px !important;
+    padding: 15px 30px 30px 30px !important;
     max-width: 1820px;
 }
 
@@ -777,7 +776,7 @@ input[type="checkbox"] {
 }
 
 .container-toko .bawah-toko .card-toko .content {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: var(--hijau-tua);
     width: 100%;
     display: flex;
@@ -794,8 +793,8 @@ input[type="checkbox"] {
     border-top: 8px solid var(--emas);
     border-bottom: 1px;
     position: relative;
-    bottom: 13px;
-    box-shadow: 61px -53px 0 -53px var(--emas) ;
+    bottom: 6px;
+    box-shadow: 55px -45px 0 -45px var(--emas) ;
     z-index: 1;
 }
 
