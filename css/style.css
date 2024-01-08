@@ -65,6 +65,7 @@ nav {
     z-index: 999;
 }
 
+
 nav .logo img {
     margin-left: -50px;
     width: 50%;
@@ -276,15 +277,21 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: var(--hijau-hitam);
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
     transition: .3s ease;
+    cursor: pointer;
+}
+
+.rectanglebutton a {
+    color: inherit;
 }
 
 .rectanglebutton:hover {
     background-color: #af9504;
+    color: var(--putih);
 }
 
 .media {
@@ -856,7 +863,7 @@ input[type="checkbox"] {
 
 /* Donasi */
 .container-donasi {
-    padding: 40px;
+    padding: 40px 40px 30px 40px;
 }
 
 .atasdonasi {
@@ -1071,7 +1078,7 @@ input[type="checkbox"] {
 
 .container-kontak {
     width: 100%;
-    padding: 40px;
+    padding: 45px 40px;
 }
 
 .header-kontak {
