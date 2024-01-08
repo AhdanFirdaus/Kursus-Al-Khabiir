@@ -280,6 +280,11 @@ input[type="checkbox"] {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    transition: .3s ease;
+}
+
+.rectanglebutton:hover {
+    background-color: #af9504;
 }
 
 .media {
@@ -297,6 +302,7 @@ input[type="checkbox"] {
     padding: .4rem;
     border-radius: .6rem;
 }
+
 
 .masjid-transparant {
     background-color: white;
@@ -858,6 +864,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3.3rem;
     /* margin-left: -2rem; */
 }
 
@@ -888,14 +895,18 @@ input[type="checkbox"] {
 
 .donasi-box {
     max-width: 95%;
-    height: 300px;
-    padding: 20px;
-    margin: 20px auto;
+    height: 565px;
+    padding: 10px 30px;
+    margin: 10px auto 0 auto;
     background-color: #0E2630;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow-y: auto;
+}
+
+.donasi-box::-webkit-scrollbar-track{
+    border-radius: 10px;
 }
 
 
@@ -907,33 +918,86 @@ input[type="checkbox"] {
     border: 1px solid #fff;
     border-radius: 5px;
     display: flex;
+    gap: 2rem;
     align-items: center;
 }
 
 .donation-item:hover {
-    background-color: #D0B003;
+    background-color: var(--emas);
     border: 2px solid #fff;
 }
 
 .donation-item img {
-    width: 100px;
-    height: 50px;
+    width: 300px;
     border-radius: 5px;
     margin-right: 10px;
+    transition: all .5s;
 }
 
 .donation-item img:hover {
-    width: 150px;
-    height: 80px;
+    width: 350px;
 }
 
 .donation-item .donation-content {
-    flex: 1;
+    width: 77%;
 }
+
+.donation-item .donation-content h3 {
+    line-height: 20px;
+    font-family: var(--font-paragraph);
+    font-size: 25px;
+}
+
+.donation-item .donation-content span {
+    width: 100%;
+    display: inline-block;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -10px;
+}
+
+.donation-item .donation-content span::after {
+    content: '';
+    background-color: var(--hijau-hitam) !important;
+    width: 100px;
+    display: block;
+    height: 5px;
+}
+
+.donation-item .donation-content .line-1::after {
+    width: 50%;
+}
+
+.donation-item .donation-content .line-2::after {
+    width: 80%;
+}
+
+.donation-item .donation-content .line-3::after {
+    width: 10%;
+}
+
+.donation-item .donation-content .line-4::after {
+    width: 30%;
+}
+
+.donation-item .donation-content .line-5::after {
+    width: 75%;
+}
+
+.donation-item .donation-content .line-6::after {
+    width: 90%;
+}
+
 
 .donation-item h3,
 .donation-item p {
     margin: 0;
+}
+
+.donation-item b {
+    font-size: 20px;
+    font-family: var(--font-paragraph);
+    font-weight: 700;
 }
 
 .donation-item b:hover {
@@ -952,7 +1016,9 @@ input[type="checkbox"] {
     width: max-content; 
     display: flex;
     overflow-x: auto;
-    animation: marquee 40s linear infinite;
+    animation: marquee 80s linear infinite;
+    margin-bottom: 1.5rem;
+    padding: .5rem 0;
 }
 
 .news-item {
@@ -962,14 +1028,14 @@ input[type="checkbox"] {
     padding: 10px;
     margin-right: 10px;
     background-color: #0E2630;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.7);
     border-radius: 5px;
     text-align: left;
 }
 
 .news-item img {
-    width: 90px;
-    height: 50px;
+    width: 200px;
+    height: auto;
     border-radius: 5px;
     margin-right: 10px;
 }
@@ -988,11 +1054,11 @@ input[type="checkbox"] {
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
@@ -1416,6 +1482,23 @@ footer .container-footer a {
     .container-toko .bawah-toko h3 {
         font-size: 18px;
     }
+
+    /* Donasi */
+    .atasdonasi {
+        margin-left: -1rem;
+    }
+
+    .atasdonasi .judul-donasi {
+        width: 40%;
+    }
+
+    .donate-button {
+        margin-right: .5rem;
+    }
+
+    .donation-item {
+        gap: 1rem;
+    }
 }
 
 
@@ -1619,6 +1702,49 @@ footer .container-footer a {
     .slide-container .swiper-button-prev {
         left: -2px;
     }
+
+    /* Donasi */
+    .container-donasi {
+        padding: 2%;
+    }
+
+    .donation-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+
+    .atasdonasi .judul-donasi {
+        width: 100%;
+    }
+
+    .atasdonasi {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .donate-button {
+        margin: 0;
+    }
+
+    .donasi-box {
+        padding: 10px 20px;
+    }
+
+    .donation-item img {
+        width: 60%;
+    }
+
+    .donation-item img:hover {
+        width: 80%;
+    }
+
+    .news-item img {
+        width: 175px;
+    }
+
 }
 
 /* @media (max-width: 971px) {
