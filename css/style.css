@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 :root {
-    /* --emas: #D0B003; */
     --emas: #e2c103;
     --hijau-tua: #0E2630;
     --hijau-hitam: #091a22;
@@ -33,12 +32,10 @@
     background-color: var(--hijau-hitam);
 }
 
-
 body {
     /* height: 2000px; */
     overflow-x: hidden;
 }
-
 
 * {
     margin: 0;
@@ -62,7 +59,6 @@ nav {
     flex-wrap: wrap;
     z-index: 999;
 }
-
 
 nav .logo img {
     margin-left: -50px;
@@ -107,18 +103,7 @@ input[type="checkbox"] {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Beranda */
-
 .container-beranda {
     width: 100%;
     height: 1000px;
@@ -177,7 +162,7 @@ input[type="checkbox"] {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     animation: bounce 2s infinite;
-
+    transition: 0.3s ease;
 }
 
 .beranda .animated-button a {
@@ -207,22 +192,7 @@ input[type="checkbox"] {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Tentang */
-
 .tentang {
     background: var(--hitam);
     width: 100%;
@@ -279,7 +249,7 @@ input[type="checkbox"] {
     font-family: var(--font-button);
     font-size: 20px;
     font-weight: 400;
-    transition: .3s ease;
+    transition: .3s ease !important;
     cursor: pointer;
 }
 
@@ -308,7 +278,6 @@ input[type="checkbox"] {
     border-radius: .6rem;
 }
 
-
 .masjid-transparant {
     background-color: var(--putih);
     background-image: url(/assets/masjid-transparant.png);
@@ -330,33 +299,7 @@ input[type="checkbox"] {
     background: radial-gradient(rgba(19, 18, 17, 0) 25%, rgb(19, 18, 17, 1) 100%), linear-gradient(180deg, rgba(19, 18, 17, 0) 25%, rgb(19, 18, 17, 1)100%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* layanan */
-
 .container {
     width: 100%;
     height: auto;
@@ -440,8 +383,6 @@ input[type="checkbox"] {
     font-size: 40px;
 }
 
-
-
 /* Waktu Sholat */
 .waktusholat {
     width: 100%;
@@ -486,20 +427,6 @@ input[type="checkbox"] {
     font-family: var(--font-judul);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* kegiatan */
 .container-kegiatan {
     width: 100%;
@@ -522,7 +449,6 @@ input[type="checkbox"] {
     width: 100%;
 }
 
-
 .wadah-kegiatan {
     display: flex;
     justify-content: center;
@@ -539,12 +465,12 @@ input[type="checkbox"] {
     text-align: center;
     padding: 20px;
     border: 4px var(--emas) solid;
-    transition: 1s;
+    transition: all 1s ease !important;
 }
 
 .card-kegiatan:hover {
     margin-top: -30px;
-    box-shadow: 1px 1px 10px rgb(14, 38, 48, 0.5);
+    box-shadow: 1px 40px 50px -20px rgba(14, 38, 48, 0.5);
 }
 
 .card-kegiatan img {
@@ -576,19 +502,12 @@ input[type="checkbox"] {
     border-radius: 50px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
 }
 
 .card-kegiatan a:hover {
     background-color: var(--btn-hover);
 }
-
-
-
-
-
-
-
-
 
 /* Rukun Islam */
 .rukun-islam {
@@ -866,22 +785,6 @@ input[type="checkbox"] {
     opacity: 0.5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Donasi */
 .container-donasi {
     padding: 40px 40px 30px 40px;
@@ -902,7 +805,7 @@ input[type="checkbox"] {
 }
 
 .atasdonasi .judul-donasi h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-family: var(--font-judul);
 }
 
@@ -912,13 +815,18 @@ input[type="checkbox"] {
 
 .donate-button {
     padding: 10px 20px;
-    background-color: #0E2630;
+    background-color: var(--btn);
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     margin-right: 3rem;
     font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: var(--btn-hover);
 }
 
 .donasi-box {
@@ -1016,7 +924,6 @@ input[type="checkbox"] {
     width: 90%;
 }
 
-
 .donation-item h3,
 .donation-item p {
     margin: 0;
@@ -1026,6 +933,7 @@ input[type="checkbox"] {
     font-size: 20px;
     font-family: var(--font-paragraph);
     font-weight: 700;
+    transition: .3s ease !important;
 }
 
 .donation-item b:hover {
@@ -1091,30 +999,7 @@ input[type="checkbox"] {
     animation-play-state: paused;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* kontak */
-
 .container-kontak {
     width: 100%;
     padding: 45px 40px;
@@ -1155,10 +1040,7 @@ input[type="checkbox"] {
     margin: auto;
 }
 
-
-
 /* sisi pertama kontak */
-
 .container-kontak .sisi-pertama {
     font-size: 16px;
     width: 50%;
@@ -1178,7 +1060,6 @@ input[type="checkbox"] {
     font-size: 32px;
     vertical-align: middle;
 }
-
 
 .container-kontak .sisi-pertama .medsos ul {
     display: flex;
@@ -1202,16 +1083,7 @@ input[type="checkbox"] {
     color: var(--putih-beda);
 }
 
-
-
-
-
-
-
-
-
 /* sisi kedua kontak */
-
 .colum-kontak .sisi-kedua {
     padding: 1.5rem 3rem;
     border-radius: 20px;
@@ -1250,8 +1122,6 @@ input[type="checkbox"] {
     border-radius: 5px
 }
 
-
-
 .sisi form button {
     margin: auto;
     margin-top: 20px;
@@ -1278,7 +1148,6 @@ button i {
 .btn-none {
     display: none;
 }
-
 
 .alert {
     padding: 15px;
@@ -1311,11 +1180,6 @@ button i {
     color: black;
 }
 
-
-
-
-
-
 /* Footer */
 footer .container-footer {
     width: 90%;
@@ -1334,21 +1198,7 @@ footer .container-footer a {
     color: var(--emas);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive */
-
-
-
 @media (max-width: 1100px) {
     nav .menu-btn i {
         display: block;
@@ -1407,6 +1257,10 @@ footer .container-footer a {
         height: 15%;
     }
 
+    .tentang {
+        height: auto;
+    }
+
     .judul {
         width: 100%;
         font-size: 35px;
@@ -1431,11 +1285,14 @@ footer .container-footer a {
         gap: 9%;
     }
 
+    .rectanglebutton {
+        margin-bottom: 1rem;
+    }
+
     .rectangle svg {
         width: 45px;
         height: 45px;
     }
-
 
     /* Layanan */
     .container {
@@ -1458,6 +1315,7 @@ footer .container-footer a {
 
     .container .container-card {
         overflow-y: scroll;
+        height: 480px;
     }
 
     .container .container-card::-webkit-scrollbar {
@@ -1548,7 +1406,6 @@ footer .container-footer a {
 }
 
 
-
 @media (max-width: 768px) and (min-width: 300px) {
     ::-webkit-scrollbar {
         width: 4px;
@@ -1577,7 +1434,7 @@ footer .container-footer a {
     }
 
     .atas-1 {
-        width: 60%;
+        width: 100%;
         height: 20%;
     }
 
@@ -1616,6 +1473,12 @@ footer .container-footer a {
         width: 40px;
     }
 
+    /* Kegiatan */
+    .card-kegiatan:hover {
+        margin-top: 0px ;
+        box-shadow: 0px 50px 30px -40px rgba(14, 38, 48, 0.5);
+    }
+
 
     /* Layanan */
     .header,
@@ -1626,6 +1489,10 @@ footer .container-footer a {
 
     .container {
         padding: 2rem;
+    }
+
+    .container .container-card{
+        height: 400px;
     }
 
     .card {
@@ -1697,7 +1564,6 @@ footer .container-footer a {
         justify-content: center;
         gap: 0.5rem;
     }
-
 
     /* Toko */
     .container-toko .header-toko {
@@ -1791,103 +1657,3 @@ footer .container-footer a {
         width: 175px;
     }
 }
-
-/* @media (max-width: 971px) {
-    .container .container-card {
-        overflow-y: scroll;
-    }
-
-    .column {
-        flex: 1 100%;
-        max-width: 100%;
-        margin-bottom: -10px;
-    }
-
-    .card img {
-        width: 20%;
-    }
-
-    .waktusholat .waktu {
-        overflow-x: scroll;
-    }
-} */
-
-/* @media (max-width: 500px) {
-    .container-beranda .beranda {
-        top: 350px;
-    }
-    
-    nav {
-        padding: 0 6% 0 20%
-    }
-    .header img {
-        width: 200px;
-        margin-left: 15px;
-    }
-    
-    nav {
-        padding: 0 6% 0 19%
-    }
-} */
-
-/* @media (max-width: 500px) {
-	 .container-kegiatan {
-        padding: 0;
-    }
-
-    .card-kegiatan {
-        margin: 0;
-    }
-
-    .wadah-kegiatan .card-kegiatan img {
-        width: 70px;
-    }
-
-    .wadah-kegiatan .card-kegiatan:nth-child(2) {
-        margin: 10px 0 10px 0;
-    }
-
-    .rukun-islam {
-        margin-top: 0;
-    }
-
-    .card-rukun {
-        width: 100px;
-        padding: 5px;
-    }
-}
-
-
-@media (max-width: 308px) {
-    .container-kegiatan .header-kegiatan img {
-        width: 200px;
-        margin-left: 15px;
-    }
-} */
-
-/* @media (max-width: 308px) {
-    .header-kontak img {
-        width: 200px;
-    }
-
-    .sisi-dua img {
-        width: 200px;
-    }
-}
-
-
-@media (max-width: 971px) {
-    .colum-kontak .sisi {
-        flex: 1 100%;
-        max-width: 100%;
-        margin-bottom: -10px;
-    }
-
-    .sisi h3 {
-        margin-top: 30px;
-    }
-
-    .container-kontak .colum-kontak .sisi-kedua {
-        margin-top: 20px;
-    } 
-} */
