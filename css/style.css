@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
 :root {
-    --emas: #e2c103;
+    --emas: #FFC400;
     --hijau-tua: #0E2630;
     --hijau-hitam: #091a22;
     --putih: #ffffff;
@@ -355,20 +355,18 @@ input[type="checkbox"] {
     width: 20%;
 }
 
+.card .isi {
+    color: var(--hitam);
+}
+
 .card .isi h3 {
     font-size: 20px;
     color: var(--emas);
 }
 
 .card .isi .deskripsi {
-    color: #787878;
     margin-bottom: 15px;
 }
-
-.card .isi p {
-    color: #858585;
-}
-
 .card .isi i {
     margin-right: 10px;
 }
@@ -693,12 +691,12 @@ input[type="checkbox"] {
 }
 
 .slide-container .swiper-navBtn {
-    color: #f0cc03;
+    color: var(--emas);
     transition: color 0.3s;
 }
 
 .slide-container .swiper-navBtn:hover {
-    color: var(--emas);
+    color: rgb(255, 238, 0);
 }
 
 .slide-container .swiper-navBtn::before,
@@ -750,6 +748,7 @@ input[type="checkbox"] {
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     border-bottom: 8px solid var(--emas);
     transition: margin-top 1s ease, border-bottom 0.5s ease-in, border-top 1s ease;
 }
@@ -856,6 +855,7 @@ input[type="checkbox"] {
     display: flex;
     gap: 2rem;
     align-items: center;
+    cursor: pointer;
 }
 
 .donation-item:hover {
@@ -1076,6 +1076,7 @@ input[type="checkbox"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .container-kontak .sisi-pertama .medsos li i:hover {
@@ -1196,6 +1197,7 @@ footer .container-footer {
 footer .container-footer a {
     text-decoration: none;
     color: var(--emas);
+    font-weight: 700;
 }
 
 /* Responsive */
@@ -1292,6 +1294,7 @@ footer .container-footer a {
     .rectangle svg {
         width: 45px;
         height: 45px;
+        cursor: pointer;
     }
 
     /* Layanan */
