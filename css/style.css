@@ -394,6 +394,7 @@ input[type="checkbox"] {
 }
 
 .judul-waktu h2 {
+    color: var(--hitam);
     font-family: var(--font-judul);
     font-weight: 700;
 }
@@ -409,17 +410,19 @@ input[type="checkbox"] {
 .card-waktu {
     width: 100%;
     margin: 10px;
-    background-color: #f0f0f0;
+    background-color: var(--btn);
     border: 2px solid var(--emas);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    color: var(--putih);
+    box-shadow: 0 5px 5px -3px var(--hijau-tua);
 }
 
 .card-waktu h4 {
     line-height: 30px;
-    border-bottom: 3px var(--hijau-hitam) solid;
+    border-bottom: 3px var(--emas) solid;
     border-radius: 3px;
     margin-bottom: 10px;
     font-family: var(--font-judul);
@@ -949,7 +952,7 @@ input[type="checkbox"] {
     width: max-content;
     display: flex;
     overflow-x: auto;
-    animation: marquee 80s linear infinite;
+    animation: marquee 60s linear infinite;
     margin-bottom: 1.5rem;
     padding: .5rem 0;
 }
@@ -1619,6 +1622,10 @@ footer .container-footer a {
         left: -2px;
     }
 
+    .slide-container .harga {
+        font-size: 15px;
+    }
+
     /* Donasi */
     .container-donasi {
         padding: 2%;
@@ -1650,14 +1657,40 @@ footer .container-footer a {
     }
 
     .donation-item img {
-        width: 60%;
+        width: 70%;
     }
 
     .donation-item img:hover {
-        width: 80%;
+        width: 90%;
+    }
+
+    .donation-item .donation-content {
+        width: 95%;
+    }
+
+    .donation-item .donation-content h3 {
+        font-size: 20px;
+    }
+
+    .donation-item .donation-content p {
+        font-size: 15px;
+    }
+
+    .donation-item .donation-content b {
+        font-size: 18px;
     }
 
     .news-item img {
-        width: 175px;
+        width: 100px;
     }
+
+    .news-item .news-item-content h3{
+        font-size: 15px;
+    }
+
+    .news-item .news-item-content p {
+        font-size: 12px;
+    }
+    
+
 }
